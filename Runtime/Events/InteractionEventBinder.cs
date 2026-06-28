@@ -66,7 +66,7 @@ namespace AjoyGames.MotionKit.Events
         }
 
         /// <summary>Fires the float slot for <paramref name="key"/> if present.</summary>
-        public void Invoke(string key, float payload)
+        public new void Invoke(string key, float payload)
         {
             if (_lookup == null) RebuildLookup();
             NamedEvent slot;
