@@ -1,0 +1,47 @@
+name: Validate Unity package
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate package layout and metadata
+        shell: pwsh
+        run: |
+          $required = @(
+            'Runtime', 'Editor', 'Documentation~', 'Samples~', 'Tests',
+            'package.json', 'README.md', 'CHANGELOG.md', 'LICENSE.md'
+          )
+          foreach ($path in $required) {
+            if (-not (Test-Path -LiteralPath $path)) {
+              throw "Missing required package path: $path"
+            }
+          }
+
+          $forbidden = @(
+            'Assets', 'Library', 'Logs', 'Temp', 'ProjectSettings', 'Packages',
+            'UserSettings', 'Build', 'Builds', 'Obj', 'MemoryCaptures'
+          )
+          foreach ($path in $forbidden) {
+            if (Test-Path -LiteralPath $path) {
+              throw "Unity project content must not be committed: $path"
+            }
+          }
+
+          $package = Get-Content -Raw package.json | ConvertFrom-Json
+          if ($package.name -ne 'com.ajoygames.motionkit') {
+            throw "Unexpected package name: $($package.name)"
+          }
+          if ($package.displayName -ne 'MotionKit') {
+            throw "Unexpected display name: $($package.displayName)"
+          }
+          if ($package.author.name -ne 'Ajoy Games') {
+            throw "Unexpected author: $($package.author.name)"
+          }
+          if ($package.unity -ne '2020.3') {
+            throw "Unexpected minimum Unity version: $($package.unity)"
+          }

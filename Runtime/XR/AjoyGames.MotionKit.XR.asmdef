@@ -1,0 +1,37 @@
+{
+    "name": "AjoyGames.MotionKit.XR",
+    "rootNamespace": "AjoyGames.MotionKit.XR",
+    "references": [
+        "AjoyGames.MotionKit.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.xr.interaction.toolkit",
+            "expression": "",
+            "define": "MOTIONKIT_XRI"
+        },
+        {
+            "name": "com.unity.xr.hands",
+            "expression": "",
+            "define": "MOTIONKIT_XR_HANDS"
+        },
+        {
+            "name": "com.unity.xr.openxr",
+            "expression": "",
+            "define": "MOTIONKIT_OPENXR"
+        },
+        {
+            "name": "com.unity.xr.management",
+            "expression": "",
+            "define": "MOTIONKIT_XR_MANAGEMENT"
+        }
+    ],
+    "noEngineReferences": false
+}

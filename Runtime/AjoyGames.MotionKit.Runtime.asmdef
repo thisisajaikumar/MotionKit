@@ -1,0 +1,47 @@
+{
+    "name": "AjoyGames.MotionKit.Runtime",
+    "rootNamespace": "AjoyGames.MotionKit",
+    "references": [
+        "UnityEngine.UI"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.modules.particlesystem",
+            "expression": "",
+            "define": "MOTIONKIT_PARTICLES"
+        },
+        {
+            "name": "com.unity.modules.physics",
+            "expression": "",
+            "define": "MOTIONKIT_PHYSICS"
+        },
+        {
+            "name": "com.unity.modules.audio",
+            "expression": "",
+            "define": "MOTIONKIT_AUDIO"
+        },
+        {
+            "name": "com.unity.modules.animation",
+            "expression": "",
+            "define": "MOTIONKIT_ANIMATION"
+        },
+        {
+            "name": "com.unity.modules.director",
+            "expression": "",
+            "define": "MOTIONKIT_DIRECTOR"
+        },
+        {
+            "name": "com.unity.ugui",
+            "expression": "",
+            "define": "MOTIONKIT_UGUI"
+        }
+    ],
+    "noEngineReferences": false
+}

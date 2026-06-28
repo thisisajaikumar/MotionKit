@@ -1,0 +1,30 @@
+{
+  "name": "com.ajoygames.motionkit",
+  "displayName": "MotionKit",
+  "version": "1.0.0",
+  "unity": "2020.3",
+  "description": "High-performance recording and playback framework for Unity. Record interactions on any GameObject and generate reusable recording assets, prefabs and animation clips that play back at runtime with a clean API. Modular track system, zero-allocation playback, persistent GUID bindings, recorder profiles, a built-in timeline editor, a universal event system, versioned recordings with automatic migration, and a public plugin SDK. Platform independent; XR is an optional, guarded module.",
+  "keywords": [
+    "recording",
+    "playback",
+    "animation",
+    "interaction",
+    "motion",
+    "xr",
+    "tools"
+  ],
+  "author": {
+    "name": "Ajoy Games",
+    "url": "https://github.com/AjoyGames"
+  },
+  "documentationUrl": "https://github.com/thisisajajkumar/MotionKit",
+  "changelogUrl": "https://github.com/thisisajajkumar/MotionKit/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/thisisajajkumar/MotionKit/blob/main/LICENSE.md",
+  "samples": [
+    {
+      "displayName": "Recorder Sample",
+      "description": "A recordable sample interaction plus a playback demo.",
+      "path": "Samples~/RecorderSample"
+    }
+  ]
+}

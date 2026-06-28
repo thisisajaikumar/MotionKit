@@ -1,0 +1,19 @@
+{
+    "name": "AjoyGames.MotionKit.Editor",
+    "rootNamespace": "AjoyGames.MotionKit.Editor",
+    "references": [
+        "AjoyGames.MotionKit.Runtime",
+        "UnityEngine.UI"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
